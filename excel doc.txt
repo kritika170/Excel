@@ -1,0 +1,96 @@
+EXCEL-used for documentation and data analytics.
+
+DIFFERENT TYPES OF DATA YOU CAN USE IN EXCEL
+
+1. It is used for Data Analytics and Docunentation.
+2. There are different types of data like numbers, text, date, currency, etc.
+  a.We can see the text aligned to the left side of the block & the numbers aligned to the right side of the block.
+  b.We can format numbers by adding the decimals or the precision.
+  c.We can change the format of the date. (dd-mm-yyyy or dd month yyyy or dd/mm/yyyy or any other)
+    Date is also a number. It starts counting the date from year 1900 and counts the number of days ahead.
+    That is bascially the no of days passed from the year 1900. Hence we can convert a number to a date as well.
+  d.We can also format the currency. ($10,000)
+
+
+THE BASICS OF FORMATTING
+
+1. If we want to change something in the entire sheet (maybe the font type of the entire sheet) 
+   then we can click on the intersection of the rows and columns at the top left of the screen
+   to select the entire sheet.
+2. If a cell has contents that does not fit in the cell perfectly then we can click on the intersection of the two cells 
+   that is the cell with the contents and the next cell and double click on it & it will automatically adjust for you.  
+3. We can also put border around the table.
+4. We can wrap the text that is written in a cell if the text is too long to fit in the cell.
+
+
+SOME BASIC FUNCTIONS
+
+1. We can insert a new column if we want to.
+2. colon(:) is a range operator 
+3. we can use functions such as 
+   =SUM(C2:F2) which means sum the contents of C2,D2,E2,F2 
+   =AVERAGE(C2:C4) which means calculate the average of C2,C3,C4
+   =MIN(C2:C4) which means find the minimum value among the group of numbers
+   =MAX(C2:C4) which means find the maximum value among the group of numbers
+   =COUNT(C2:C4) this will be equal to 3 that is C2,C3,C4 (bascially counts the number of cells)
+ 
+
+SOME COMPLEX FUNCTIONALITIES
+
+1. =COUNTIF(C2:C4,">=90") 
+   =COUNTIF(RANGE,CRITERIA) 
+   this complex function will help you to count the cells that meet the given condition.
+
+2. =SUMIF(G2:G4,">=75%",C2:C4)
+   =SUMIF(RANGE,CRITERIA,SUM_RANGE)
+   this will initially consider the range and will apply the condition on that particular range,
+   then you will get a set of range that agrees to the condition and it will give you the sum of that range.
+
+3. =SUMIF(G2:G4,">=75%",C2:C4)/COUNTIF(G2:G4,">=75%")
+   this is a complex function to find the average 
+
+
+VISUALISING DATA IN EXCEL
+
+1. Select the data/columns that should appear in the form of a chart (visual representation) 
+   Click on Insert -> Charts
+   You will find different types of charts like pie chart, line chart, bar chart
+2. We can switch row to column
+3. We can also give title to the charts and apply font styles to it. Also every entity can be modified in the similar fashion.
+4. The + sign is the 'chart elements' that helps us add more data to the charts and make it more readable.
+   We can change the color of the charts.
+5. The chart is linked to the data, so any changes in the data will lead to changes in the chart as well.
+   Like for example we have a chart in the different section where the data of the chart is not available 
+   & if we make changes in the original data it will be reflected on the chart as well.
+   This is useful when we don't want to provide someone with the data but want to give the chart for analysis
+   (bascially we can use the data in the backend and the chart in the frontend.)
+6. We can use Pie chart with a single element.
+
+
+PIVOT TABLES
+
+1. The data variables are related to each other & this helps us to create pivot tables.
+2. First select the entire table -> Go to Insert -> Select Pivot Table
+3. Pivot Table Fields:-Filters, Rows, Columns, Values
+   You can drag and drop the entities into these four fields & your table will be modified accordingly.
+   We can also change the settings of the entities in the four fields (by default we get the sum)
+
+
+THE VLOOKUP FUNCTION
+
+1. It is a reference or a lookup function.
+2. VLOOKUP stands for Vertical Lookup. Most of the things in excel are vertically aligned & not horizontally aligned.
+   =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+-->=VLOOKUP(give a value, entire range of columns in which you might find the desired value, how many columns away from the value, 
+   do we want approximate match (TRUE) or the exact match (FALSE))
+   =VLOOKUP(210,A1:H4,8,FALSE)
+   =VLOOKUP(D7,A1:H4,8,FALSE) --> In this case you will have to enter the value in the column D7 & you will get the corresponding output.
+   This can be done in another sheet as well and the contents of the actual sheet will be linked to it,
+   as long as it is in the same spreadsheet.
+
+
+
+
+
+
+   
